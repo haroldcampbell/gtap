@@ -6,9 +6,9 @@ A rich-data presentation library written in JavaScript (ES6) that demonstrates h
 
 This library is still in its infancy.
 
-# Anemic Components
+# Functional Visuals
 
-Anemic Components adhere to five core design principles. When adopted, the resulting components/libraries can be used to:
+Functional Visuals adhere to five core design principles. When adopted, the resulting components/libraries can be used to:
 
 * visualize rich-data
 * perform analytics
