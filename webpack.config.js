@@ -11,12 +11,12 @@ module.exports = {
     mode: 'development',
 
     plugins: [
-        new CleanWebpackPlugin(['www/assets/dist']),
+        new CleanWebpackPlugin(['dist']),
     ],
 
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'www/assets/dist'),
+        path: path.resolve(__dirname, 'dist'),
         library: 'gtap',
         libraryTarget: 'umd',
     },
