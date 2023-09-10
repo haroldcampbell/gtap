@@ -1,0 +1,92 @@
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>AnCUI [Demo]</title>
+    <link href="styles.css" media="all" rel="stylesheet" />
+    <link href="visuals.css" media="all" rel="stylesheet" />
+    <link href="./libs/horizontal-slider/horizontal-slider.css" media="all" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .ellipse {
+            fill: rgb(0, 120, 255);
+        }
+        .title {
+            color: #404040;
+            font-size: 0.9em;
+        }
+
+        .desc {
+            color: #e0e0d0;
+            font-size: 0.8em;
+        }
+
+        .desc-details {
+            color: #c0c0c0;
+            font-size: 0.85em;
+        }
+        .experiment {
+            width: 600px;
+            margin: 40px auto;
+            border-bottom: solid 3px #ccc;
+        }
+
+        .experiment:last-of-type {
+            border: none;
+        }
+
+        .experiment svg {
+            width: 100%;
+        }
+
+        .experiment li {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="experiment">
+        <li class="title">Experiment 2</li>
+        <li id="window-experiment-2" class="container ex-tiny"></li>
+        <li>
+            <hslider id="s2"></hslider>
+            <div id="slider-text-2" class="desc">Drag the knob.</div>
+        </li>
+        <li id="unwindowed-experiment-2" class="container ex-tiny"></li>
+        <li class="desc-details">A view of the same data, but without the window</li>
+    </ul>
+
+    <ul class="experiment">
+        <li class="title">Experiment 1</li>
+        <li id="experiment-1" class="container ex-tiny"></li>
+        <li>
+            <button id="add-data" onclick="sayHi(1)">Add Data</button>
+        </li>
+        <li>
+            <hslider id="s1" labelId='slider-text-1'></hslider>
+            <div id="slider-text-1" class="desc">Drag the knob.</div>
+        </li>
+    </ul>
+
+
+    <script src="./libs/horizontal-slider/horizontal-slider.js" type="text/javascript"></script>
+    <script src="./dist/experiments.js" type="text/javascript"></script>
+
+    <script>
+        hslider.initializeSliders();
+        // let slider = hslider.getSliderById("s1");
+        // slider.knob.onRangeChanged = function (s) {
+        // console.log("slider:s1", s.knob.range)
+        // }
+    </script>
+
+
+</body>
+
+</html>

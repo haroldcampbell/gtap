@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+set +x
+
+babel-tape-runner ./tests/tap.js ./tests/**/*.test.js
