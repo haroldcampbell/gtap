@@ -8,3 +8,7 @@ package-lock.json
 
 coverage/
 bun.lockb
+
+**/.env
+
+www/experimental/libs/horizontal-slider/
